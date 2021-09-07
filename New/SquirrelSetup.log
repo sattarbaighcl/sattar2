@@ -1,0 +1,29 @@
+﻿2021-08-23 16:15:27> Program: Starting Squirrel Updater: --install .
+2021-08-23 16:15:27> Program: Starting install, writing to C:\Users\satta\AppData\Local\SquirrelTemp
+2021-08-23 16:15:28> Program: About to install to: C:\Users\satta\AppData\Local\GrammarlyForWindows
+2021-08-23 16:15:28> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\satta\AppData\Local\GrammarlyForWindows\packages\.betaId'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2021-08-23 16:15:28> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\satta\AppData\Local\GrammarlyForWindows\packages\RELEASES'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2021-08-23 16:15:28> CheckForUpdateImpl: Reading RELEASES file from C:\Users\satta\AppData\Local\SquirrelTemp
+2021-08-23 16:15:28> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2021-08-23 16:15:28> ApplyReleasesImpl: Writing files to app directory: C:\Users\satta\AppData\Local\GrammarlyForWindows\app-1.5.76
+2021-08-23 16:15:30> LogHost: Rigging execution stub for GrammarlyForWindows_ExecutionStub.exe to C:\Users\satta\AppData\Local\GrammarlyForWindows\GrammarlyForWindows.exe
+2021-08-23 16:15:42> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\satta\AppData\Local\GrammarlyForWindows\app-1.5.76\GrammarlyForWindows.exe]
+2021-08-23 16:15:55> ApplyReleasesImpl: Starting fixPinnedExecutables
+2021-08-23 16:15:55> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2021-08-23 16:15:55> ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+2021-08-23 16:15:55> ApplyReleasesImpl: Fixing up tray icons
+2021-08-23 16:15:55> ApplyReleasesImpl: cleanDeadVersions: for version 1.5.76
+2021-08-23 16:15:55> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-1.5.76
